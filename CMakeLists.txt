@@ -51,14 +51,11 @@ target_compile_options(helloworld PRIVATE
 
 
 install(TARGETS helloworld RUNTIME DESTINATION bin)
-
-
 set(CPACK_GENERATOR DEB)
-set(CPACK_PACKAGE_VERSION_MAJOR "${helloworld_VERSION_MAJOR}")
-set(CPACK_PACKAGE_VERSION_MINOR "${helloworld_VERSION_MINOR}")
-set(CPACK_PACKAGE_VERSION_PATCH "${helloworld_VERSION_PATCH}")
+set(CPACK_DEB_COMPONENT_INSTALL ON)
+set(CPACK_DEB_PACKAGE_NAME ${CMAKE_PROJECT_NAME})
+set(CPACK_PACKAGE_VERSION ${helloworld_VERSION})
 set(CPACK_PACKAGE_CONTACT buevichd@yandex-team.ru)
-
 include(CPack)
 
 enable_testing()
