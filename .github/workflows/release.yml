@@ -9,11 +9,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
         with:
           submodules: true
-      - run: sudo apt-get update && sudo apt-get install libboost-test-dev -y
-      - run: ./build.sh
+      - name: Prepare environment
+        run: sudo apt-get update && sudo apt-get install libboost-test-dev -y
+      - name: Build and run tests
+        run: ./build.sh
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
