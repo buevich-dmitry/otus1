@@ -1,9 +1,16 @@
-Run the command below to buid the project:
+To download and install the latest version, run:
 ```
-./build.sh
+wget https://github.com/buevich-dmitry/otus1/releases/latest/download/helloworld-Linux.deb
+sudo dpkg -i helloworld-Linux.deb
 ```
 
-Run helloworld app:
+Also you can build the project locally:
 ```
-./bin/helloworld
+./build.sh
+sudo dpkg -i bin/helloworld-*-Linux.deb
+```
+
+Then run helloworld app:
+```
+helloworld
 ```
