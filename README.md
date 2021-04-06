@@ -1,6 +1,6 @@
 To download and install the latest version, run:
 ```
-wget https://github.com/buevich-dmitry/otus1/releases/latest/download/helloworld-Linux.deb
+wget -O helloworld-Linux.deb https://github.com/buevich-dmitry/otus1/releases/latest/download/helloworld-Linux.deb
 sudo dpkg -i helloworld-Linux.deb
 ```
 
