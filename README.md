@@ -4,13 +4,14 @@ wget -O helloworld-Linux.deb https://github.com/buevich-dmitry/otus1/releases/la
 sudo dpkg -i helloworld-Linux.deb
 ```
 
-Also you can build the project locally:
-```
-./build.sh
-sudo dpkg -i bin/helloworld-*-Linux.deb
-```
-
 Then run helloworld app:
 ```
 helloworld
+```
+
+---------------
+Also you can build and install the project locally:
+```
+./build.sh
+sudo dpkg -i bin/helloworld-*-Linux.deb
 ```
