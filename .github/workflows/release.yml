@@ -14,7 +14,7 @@ jobs:
           submodules: true
       - run: sudo apt-get update && sudo apt-get install libboost-test-dev -y
       - run: ./build.sh
-      - run: ./helloworld
+      - run: ./bin/helloworld
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
